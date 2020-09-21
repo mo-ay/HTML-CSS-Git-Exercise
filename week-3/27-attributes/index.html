@@ -42,7 +42,12 @@
               <legend>Billing Address</legend>
               <p>
                 <label for="billing-address-1">Address Line 1</label>
-                <input type="text" name="billing-address-1" id="billing-address-1" />
+                <input
+                  required="true"
+                  type="text"
+                  name="billing-address-1"
+                  id="billing-address-1"
+                />
               </p>
               <p>
                 <label for="billing-address-2">Address Line 2</label>
@@ -50,7 +55,7 @@
               </p>
               <p>
                 <label for="billing-postcode">Postcode</label>
-                <input type="text" name="billing-postcode" id="billing-postcode" />
+                <input required="true" type="text" name="billing-postcode" id="billing-postcode" />
               </p>
               <p>
                 <label for="billing-city">City</label>
@@ -61,7 +66,12 @@
               <legend>Delivery Address</legend>
               <p>
                 <label for="delivery-address-1">Address Line 1</label>
-                <input type="text" name="delivery-address-1" id="delivery-address-1" />
+                <input
+                  required="true"
+                  type="text"
+                  name="delivery-address-1"
+                  id="delivery-address-1"
+                />
               </p>
               <p>
                 <label for="delivery-address-2">Address Line 2</label>
@@ -70,6 +80,7 @@
               <p>
                 <label for="delivery-address-postcode">Postcode</label>
                 <input
+                  required="true"
                   type="text"
                   name="delivery-address-postcode"
                   id="delivery-address-postcode"
@@ -81,7 +92,13 @@
               </p>
               <p>
                 <label for="delivery-country">Country</label>
-                <input type="text" name="delivery-country" id="delivery-country" />
+                <input
+                  type="text"
+                  name="delivery-country"
+                  id="delivery-country"
+                  value="United Kingdom"
+                  readonly="true"
+                />
               </p>
               <fieldset>
                 <legend>Delivery Options</legend>
@@ -91,6 +108,8 @@
                     name="delivery-option"
                     id="delivery-option"
                     value="standard"
+                    checked
+                    disabled
                   />
                   Royal Mail
                 </label>
