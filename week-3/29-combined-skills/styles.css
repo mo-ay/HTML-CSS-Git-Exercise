@@ -1,1 +1,36 @@
 /* Add your own CSS code below */
+@media only screen and (min-width: 992px) {
+  .hero__title {
+    font-size: 30px;
+  }
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .views {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .views .views__all {
+    margin-left: auto;
+  }
+}
+.main-article {
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.main-article p {
+  line-height: 33px;
+}

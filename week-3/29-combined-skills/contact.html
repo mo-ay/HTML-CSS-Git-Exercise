@@ -59,10 +59,35 @@
             <input type="text" name="name" id="name" />
           </div>
           <div class="contact-form__field">
+            <label for="ml">Email</label>
+            <input required type="email" id="ml" name="email" />
+          </div>
+          <div class="contact-form__field">
+            <label for="ms">Message</label>
             <textarea
+              id="ms"
               name="message"
               placeholder="Your message should not be longer than 200 words."
             ></textarea>
+          </div>
+          <div class="contact-form__field">
+            <fieldset>
+              <legend>
+                What branch are you interested in?
+              </legend>
+              <p>
+                <input id="lon" value="London" type="checkbox" />
+                <label for="lon">London</label>
+              </p>
+              <p>
+                <input id="gl" value="Glasgow" type="checkbox" />
+                <label for="gl">Glasgow</label>
+              </p>
+              <p>
+                <input id="man" value="Manchester" type="checkbox" />
+                <label for="man">Manchester</label>
+              </p>
+            </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>
